@@ -78,6 +78,30 @@
       color: #777;
       font-size: 0.9rem;
     }
+
+    /* 戻るボタンのスタイル */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(5px);
+      padding: 8px 15px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #ff6b6b;
+      font-weight: bold;
+      font-size: 0.9rem;
+      z-index: 2000; /* ハートや写真より上に */
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 107, 107, 0.3);
+    }
+
+    .back-button:hover {
+      background: rgba(255, 107, 107, 0.8);
+      color: white;
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
@@ -142,6 +166,8 @@
     </div>
   </div>
 
+<a href="http://socrarius.stars.ne.jp/" class="back-button">[ back ]</a>
+  
   <footer>
     © 2026 Nanami & Ken. All Rights Reserved.  
     Made with love for my favorite person ♡
